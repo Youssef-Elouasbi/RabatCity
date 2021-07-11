@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rabat City</title>
+        <link rel="icon" href="images/r.png">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style_places.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    </head>
+<body>
+    <div id="mobile_menu" class="remove">
+        <button class="close" id="close"><i class="fas fa-times"></i></button>
+        <nav class="mobile-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Places.html">Places</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div> 
+    <header id="header">
+        <h1 class="logo"><a href="index.html">Rabat City</a></h1>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Places.html">Places</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+            <button id="burger"><i class="fas fa-bars"></i></button>
+        </nav>
+    </header>
+    <main class="main_places">
+        <div class="container">
+            <i class="fas fa-arrow-left" id="prevBtn"></i>
+            <i class="fas fa-arrow-right" id="nextBtn"></i>
+            <div class="slide">
+                <img src="images/hassan.jpg" id="lastClone" alt="">
+                <img src="images/mosque.jpg" alt="">
+                <img src="images/oudaya2.jpg" alt="">
+                <img src="images/zoo.jpg" alt="">
+                <img src="images/hassan.jpg" alt="">
+                <img src="images/mosque.jpg" id="firstClone" alt="">
+            </div>
+        </div>
+        <h1 class="title_places">Some Places</h1>
+        <div class="grid">
+            <div class="text1">
+                <h1>Hassan Tower</h1>
+                <p>Hassan Tower or Tour Hassan (Arabic: صومعة حسان‎) is the minaret of an incomplete mosque in Rabat, Morocco</p>
+                <button class="visitBtn">Go Visit <i class="fas fa-plane"></i></button>
+            </div>
+            <div class="image_text1">
+                <img src="images/hassan2.jpg" alt="Hassan Tower">
+            </div>
+            <div class="text2">
+                <h1>Zoo Rabat</h1>
+                <p>Rabat Zoo (Arabic: حَدِيْقَة ٱلْحَيْوَانَات بِٱلرِّبَاط) also known as "Temara Zoo", is a zoological park near Rabat in Morocco that was established in 1973</p>
+                <button class="visitBtn">Go Visit <i class="fas fa-plane"></i></button>
+            </div>
+            <div class="image_text2">
+                <img src="images/zoo2.jpg" alt="Zoo Rabat">
+            </div>
+            <div class="text3">
+                <h1>Rabat Medina</h1>
+                <p>The busy, walled old town of Rabat Medina centers on the Old Market, a souk with alleys of shops selling ceramics, spices, and jewelry</p>
+                <button class="visitBtn">Go Visit <i class="fas fa-plane"></i></button>
+            </div>
+            <div class="image_text3">
+                <img src="images/medina.jpg" alt="Rabat Medina">
+            </div>
+        </div>
+        <a href="#header"><button class="btnUp remove"><i class="fas fa-arrow-up"></i></button></a>
+    </main>
+    <footer>
+        <p>2020&copy; By Youssef Elouasbi</p>
+        <div class="media">
+            <button><a href="#"><i class="fab fa-facebook-square"></i></a></button>
+            <button><a href="#"><i class="fab fa-twitter-square"></i></a></button>
+            <button><a href="#"><i class="fab fa-linkedin"></i></a></button>
+        </div>
+    </footer>   
+    <script src="app.js"></script>
+    <script src="app_places.js"></script>
+</body>
+</html>

@@ -1,0 +1,396 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap'); /*font body font-family: 'Titillium Web', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');/*footer*/
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+    position: relative;
+}
+.home{
+    height: 100vh;
+}
+/* menu */
+header{
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    height: 10vh;
+}
+.logo a{
+    text-decoration: none;
+    color: orange;
+    border-bottom: 4px solid rgba(13, 113, 243, 0.932) ;
+    font-family: 'Yellowtail', cursive;
+}
+.menu{
+    width: 40%;
+}
+.menu ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    position: relative;
+    transition: 400ms ease;
+}
+.menu ul li a:hover, .mobile-menu ul li a:hover{
+    color: orange;
+}
+.menu ul li a::after, .mobile-menu ul li a::after{
+    position: absolute;
+    content: '';
+    border-bottom: 4px solid rgba(13, 113, 243, 0.932) ;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    transition: 400ms ease;
+}
+.menu ul li a:hover::after, .mobile-menu ul li a:hover::after{
+    width: 100%;
+    right: 100%;
+}
+
+
+nav button{
+    display: none;
+}
+.remove{
+    display: none;
+    transition: all 2s ease;
+}
+.mobile-menu{
+    width: 70%;
+    margin: 140px auto;
+}
+.mobile-menu ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile-menu ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 50px;
+    position: relative;
+    transition: 400ms ease;
+}
+.close{
+    display: block;
+    padding: 1px;
+    border: none;
+    color: white;
+    background: none;
+    font-size: 40px;
+    margin: 20px 25px;
+    cursor: pointer;
+    transition: 400ms ease;
+}
+.close:hover{
+    color: orange;
+}
+#mobile_menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+}
+/*main index*/
+.main_index{
+    display: flex;
+    flex-direction: row;
+    max-width: 90%;
+    margin: auto;
+    height: 84vh;
+    justify-content: space-around;
+    align-items: center;
+}
+.para{
+    padding: 20px;
+    /* flex: 2; */
+    width: 51%;
+}
+.para h1{
+    font-size: 44px;
+    line-height: 1;
+}
+.para p:first-of-type{
+    font-size: 17px;
+    color: orange;
+}
+.para p:nth-child(3){
+    font-size: 22px;
+}
+.para button{
+    width: 150px;
+    height: 50px;
+    margin: 17px 15px 0 0;
+    border-radius: 20px;
+    font-size: 15px;
+    cursor: pointer;
+    opacity: 0%;
+    animation: btn 4s ease;
+    animation-fill-mode: forwards;
+}
+.para button:first-of-type{
+    background-color: transparent;
+    color: rgb(238, 156, 4);
+    border: 2px solid rgb(238, 156, 4);
+    transition: all 400ms ease;
+}
+.para button:first-of-type:hover{
+    background-color: rgb(238, 156, 4);
+    color: white;
+}
+.para button:last-child{
+    /* background-color: transparent;
+    color: rgba(13, 113, 243, 0.712) ; */
+    background-color: rgba(13, 113, 243, 0.712);
+    color: white;
+    border: 2px solid rgba(13, 113, 243, 0.712) ;
+    transition: all 400ms ease;
+}
+.para button:last-child:hover{
+    /* background-color: rgba(13, 113, 243, 0.712);
+    color: white; */
+    background-color: transparent;
+    color: rgba(13, 113, 243, 0.712) ;
+}
+
+.image img{
+    width: 470px;
+    animation: tower 1300ms linear ;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+/*footer*/
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+}
+footer p{
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+}
+footer button{
+    border: none;
+    background: none;
+    padding: 3px;
+    font-size: 30px;
+}
+.media button:nth-child(1) a{
+    color: rgb(99, 99, 99);
+    transition: color 400ms ease;
+}
+.media button:nth-child(1) a:hover{
+    color: rgba(13, 113, 243, 0.712);
+}
+.media button:nth-child(2) a{
+    color: rgb(99, 99, 99);
+    transition: color 400ms ease;
+}
+.media button:nth-child(2) a:hover{
+    color:rgb(13, 113, 243);
+}
+.media button:nth-child(3) a{
+    color: rgb(99, 99, 99);
+    transition: color 400ms ease;
+}
+.media button:nth-child(3) a:hover{
+    color: rgba(13, 113, 243, 0.788);
+}
+@media(max-width: 900px){
+    .menu ul{
+        display: none;
+    }
+    .menu{
+        width: auto;
+    }
+    .menu button{
+        display: block;
+        padding: 1px;
+        border: none;
+        color: white;
+        background: none;
+        font-size: 30px;
+    }
+    .menu button:hover{
+        cursor: pointer;
+    }
+    .main_index{
+        display: flex;
+        flex-direction: column;
+        max-width: 90%;
+        margin: auto;
+        height: 85vh;
+        justify-content: center;
+        align-items: center;
+    }
+    .para{
+        padding: 20px;
+        width: 100%;
+    }
+    .image{
+        margin-top: 60px;
+    }
+    .image img{
+        width: 450px;
+        animation: tower 1300ms linear ;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    .btn{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+    footer p{
+        font-size: 14px;
+        font-family: 'Roboto', sans-serif;
+    }
+    footer button{
+        border: none;
+        background: none;
+        padding: 3px;
+        font-size: 30px;
+    }
+}
+@media(max-width: 700px){
+    .menu ul{
+        display: none;
+    }
+    .menu{
+        width: auto;
+    }
+    .menu button{
+        display: block;
+        padding: 1px;
+        border: none;
+        color: white;
+        background: none;
+        font-size: 30px;
+    }
+    .menu button:hover{
+        cursor: pointer;
+    }
+    .main_index{
+        display: flex;
+        flex-direction: column;
+        max-width: 90%;
+        margin: auto;
+        height: 85vh;
+        justify-content: center;
+        align-items: center;
+    }
+    .image{
+        margin: auto;
+    }
+    .image img{
+        width: 270px;
+        animation: tower 1300ms linear ;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    .para h1{
+        font-size: 41px;
+        line-height: 1.1;
+    }
+    .para p:first-of-type{
+        font-size: 16px;
+        color: orange;
+    }
+    .para p:nth-child(3){
+        font-size: 21px;
+    }
+    .para button{
+        width: 150px;
+        height: 50px;
+        margin: 17px 14px 0 0;
+        border-radius: 20px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+}
+
+@media(max-width : 414px){
+    footer p{
+        font-size: 11px;
+        font-family: 'Roboto', sans-serif;
+    }
+    footer button{
+        border: none;
+        background: none;
+        padding: 3px;
+        font-size: 25px;
+    }
+    .main_index{
+        height: 85vh;
+    }
+}
+@media(max-width : 375px){
+    /* footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 12vh;
+    } */
+    .main_index{
+        height: 85vh;
+    }
+    footer p{
+        font-size: 11px;
+        font-family: 'Roboto', sans-serif;
+    }
+    footer button{
+        border: none;
+        background: none;
+        padding:2px;
+        font-size: 22px;
+    }
+}
+
+@keyframes tower{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(10px);
+    }
+}
+
+@keyframes btn{
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
